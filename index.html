@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tail Admin</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config= {
+            theme: {
+                extend: {
+                    colors: {
+                        azul: {
+                            claro: '#C5DFFF',
+                            escuro: '#061E3C',
+                            hover: '#1057b0'
+                        },
+                    },
+                    fontFamily: {
+                      inter: ['inter', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
 </head>
-<body>
+<body class="bg-azul-claro font-inter flex">
     
     <!-- Cabecalho -->
 
     <header>
-        <nav>
+        <nav class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700">
             <h1></h1>
             <div>
                 <form action="">
@@ -31,9 +52,18 @@
 
     <!-- Menu Lateral -->
 
-    <aside>
-        <ul>
-            <h2>Dashboader</h2>
+    <aside class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[250px] overflow-y-auto text-left bg-azul-escuro text-gray-100 text-xl"  >
+        <ul class="font-bold text-gray-200 text-[15px] ml-3">
+            <li>
+                <a href="#"></a>
+                <span>MENU</span>
+            </li>
+            <li class="px-2 py-1 bg-gray-800">
+                <i class="bi bi-grid"></i>
+                <a href="#"></a>
+                <span>Dasboader</span>
+                
+            </li>
             <li>
                 <a href="#"></a>
                 <span>eCommerce</span>
