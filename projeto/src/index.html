@@ -9,62 +9,106 @@
     <link href="assets/css/output.css" rel="stylesheet">
 
 </head>
-<body class="bg-gray-100">
-    <div class="flex h-screen">
+<body class="bg-gray-100 max-w-[1980px] mx-auto flex justify-center" >
+    <div class="flex h-full">
         <!-- Barra Lateral -->
-        <div class="min-w-36 max-w-72  bg-blue-dark p-4 overflow-hedden text-gray-300">
+        <div class="w-1/4 max-w-[300px] bg-blue-dark p-4 overflow-hedden text-gray-300">
             <!-- Logo -->
-            <div class="flex justify-center mb-4 ">
+            <div class=" mb-4 ">
                 <img src="assets/imagens/tail admin.jpg" alt="Logo" class="h-12 w-auto">
             </div>
             <h2 class="text-xl mb-4">Menu</h2>
             <ul>
                 <!-- Dashboard -->
                 <li class="mb-2">
-                    <a href="#" onclick="toggleMenu('dashboardMenu')" class="block p-2 hover:bg-blue-dark rounded text-gray-200 bg-gray-600 hover:bg-gray-400">Dashboard</a>
+                    <a href="#" onclick="toggleMenu('dashboardMenu')" class="block p-2 hover:bg-blue-dark rounded text-gray-200 bg-gray-600 flex flex-row items-center hover:bg-gray-400">
+                        <i class="fas fa-hashtag text-gray-200 pr-4 "></i>Dashboard</a>
                     <ul id="dashboardMenu" class="ml-4 hidden ">
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">Ecommerce</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">Analytics</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">Marketing</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">CRM</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">Stocks</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">
+                            <i class="fas fa-cart-plus text-gray-200 pr-2 "></i>    
+                            Ecommerce</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">
+                            <i class="fas fa-bar-chart text-gray-200 pr-2 "></i>    
+                            Analytics</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">
+                            <i class="fas fa-credit-card text-gray-200 pr-2 "></i>    
+                            Marketing</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">
+                            <i class="fas fa-plus-circle text-gray-200 pr-2 "></i>    
+                            CRM</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600  rounded text-gray-400">
+                            <i class="fas fa-archive text-gray-200 pr-2 "></i>    
+                            Stocks</a></li>
                     </ul>
                 </li>
                 <!-- Calendar -->
-                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">Calendar</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">
+                    <i class="fas fa-calendar-check text-gray-200 pr-2 "></i>    
+                    Calendar</a></li>
                 <!-- Profile -->
-                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">Profile</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">
+                    <i class="fas fa-user text-gray-200 pr-2 "></i>    
+                    Profile</a></li>
                 <!-- Task -->
-                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">Task</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">
+                    <i class="fas fa-tasks text-gray-200 pr-2 "></i>   
+                    Task</a></li>
                 <!-- Forms -->
-                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">Forms</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">
+                    <i class="fas fa-file text-gray-200 pr-2 "></i>    
+                    Forms</a></li>
                 <!-- Tables -->
-                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">Tables</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">
+                    <i class="fas fa-table text-gray-200 pr-2 "></i>    
+                    Tables</a></li>
                 <!-- Pages -->
-                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">Pages</a></li>
+                <li class="mb-2"><a href="#" class="block p-2 hover:bg-gray-600 rounded">
+                    <i class="fas fa-columns text-gray-200 pr-2 "></i>    
+                    Pages</a></li>
                 <!-- Support -->
                 <li class="mb-2">
-                    <a href="#" onclick="toggleMenu('supportMenu')" class="block p-2 hover:bg-blue-dark rounded text-gray-200 hover:bg-gray-400 bg-gray-600">Support</a>
+                    <a href="#" onclick="toggleMenu('supportMenu')" class="block p-2 hover:bg-blue-dark rounded text-gray-200 hover:bg-gray-400 bg-gray-600">
+                        <i class="fas fa-info text-gray-200 pr-2 "></i>    
+                        Support</a>
                     <ul id="supportMenu" class="ml-4 hidden">
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">Messages</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">Inbox</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">Invoice</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">
+                        <i class="fas fa-comments text-gray-200 pr-2 "></i>    
+                            Messages</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">
+                            <i class="fas fa-inbox text-gray-200 pr-2 "></i>    
+                            Inbox</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">
+                        <i class="fas fa-microphone text-gray-200 pr-2 "></i>    
+                            Invoice</a></li>
                     </ul>
                 </li>
                 <!-- Others -->
                 <li class="mb-2">
-                    <a href="#" onclick="toggleMenu('othersMenu')" class="block p-2 hover:bg-blue-dark rounded text-gray-200 hover:bg-gray-400 bg-gray-600">Others</a>
+                    <a href="#" onclick="toggleMenu('othersMenu')" class="block p-2 hover:bg-blue-dark rounded text-gray-200 hover:bg-gray-400 bg-gray-600">
+                        <i class="fas fa-exclamation-circle text-gray-200 pr-2 "></i>    
+                        Others</a>
                     <ul id="othersMenu" class="ml-4 hidden">
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">Charts</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">UI Elements</a></li>
-                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">Authentication</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">
+                            <i class="fas fa-line-chart text-gray-200 pr-2 "></i>    
+                            Charts</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">
+                            <i class="fas fa-sitemap text-gray-200 pr-2 "></i>    
+                            UI Elements</a></li>
+                        <li class="mb-2"><a href="#" class="block p-2 hover:bg-blue-dark rounded text-gray-400">
+                            <i class="fas fa-globe text-gray-200 pr-2 "></i>    
+                            Authentication</a></li>
                     </ul>
                 </li>
             </ul>
+
+            <!-- Footer -->
+            <div class="flex justify-center mb-4 pt-8">
+                <img src="assets/imagens/tail footer.png" alt="Logo" class="h-full w-full">
+            </div>
         </div>
 
         <!-- Conteúdo Principal -->
-        <div class="w-3/4 p-8">
+        <div class="w-3/4 p-8 bg-blue-100 overflow-y-auto h-screen">
             <!-- Área de Pesquisa e Ícones -->
             <div class="flex justify-between items-center mb-8">
                 <div class="flex justify-center w-1/2">
@@ -108,10 +152,11 @@
                     <div class="text-gray-600 font-bold">Total Users</div>
                     <div class="text-right text-blue-500 text-xl">0.95% ↓</div>
                 </div>
+            </div>
             <!-- Colunas Tabelas -->
-            <div class="inline-flex items-baseline grid grid-cols-1 gap-4 mt-6">
+            <div class="inline-flex items-baseline grid grid-cols-1  gap-4 mt-6">
                 <!-- Coluna 1 -->
-                <div class="w-full bg-white p-4 shadow-md rounded-md">
+                <div class=" bg-white p-4 shadow-md rounded-md">
                     <img src="assets/imagens/tabela 1.jpg" alt="Imagem 1" class="w-full h-auto">
                 </div>
                 <!-- Coluna 2 -->
